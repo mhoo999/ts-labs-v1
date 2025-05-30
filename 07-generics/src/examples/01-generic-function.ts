@@ -7,3 +7,7 @@ function getFirstElement<T>(arr: T[]): T | undefined {
 const firstNum = getFirstElement([10, 20, 30]); // number
 const firstStr = getFirstElement(["a", "b", "c"]); // string
 const firstObj = getFirstElement([{ id: 1 }, { id: 2 }]); // {id: number}
+
+console.log(firstNum);
+console.log(firstStr);
+console.log(firstObj);
