@@ -1,0 +1,1 @@
+animals.filter((x) => isDog(x))

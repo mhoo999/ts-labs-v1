@@ -19,6 +19,6 @@ function handleError(err: Error) {
 }
 
 // 사용 예시
-// handleError(new NotFoundError("User"));
-// handleError(new ValidationError("email"));
-// handleError(new Error("알 수 없는 에러"));
+handleError(new NotFoundError("User"));
+handleError(new ValidationError("email"));
+handleError(new Error("알 수 없는 에러"));

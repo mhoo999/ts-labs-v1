@@ -14,3 +14,32 @@ function parseAgeInput(input: string | number): number {
 console.log(parseAgeInput("32")); // 32
 console.log(parseAgeInput(27)); // 27
 // console.log(parseAgeInput("열다섯")); // Error
+
+// --------------------------------------------
+
+type Person = {name:string};
+type Developer = {skills:string[]};
+type DeveOpPerson = Person & Developer;
+
+const personA: DeveOpPerson = {
+  name: "hoon",
+  skills: ["java", "c++"],
+}
+
+// --------------------------------------------
+
+// in vs 디스크리미네이티드 유니온(태그 유니온, 서로소 유니온)
+type SuccessResponse = { ok: true; data: string };
+type ErrorResponse = { ok: false; error: string };
+type ApiResponse = SuccessResponse | ErrorResponse;
+
+function handleResponse(response: ApiResponse) {
+  if (response.ok || "data" in response) {
+    console.log(response.data);
+  } else {
+    console.log(response.error);
+  }
+}
+
+handleResponse({ok:true, data:"성공!"});
+handleResponse({ok:false, error:"실패!"});
