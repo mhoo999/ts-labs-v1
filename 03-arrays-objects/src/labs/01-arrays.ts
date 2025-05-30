@@ -7,3 +7,11 @@
  */
 
 // TODO: users 배열 선언 및 위 조건 처리
+
+let users: string[] = [];
+users.push("yunuser", "yuuser", "sora");
+
+const filterUser = users.filter((user) => user.length <= 4);
+
+console.log(users);
+console.log(filterUser);

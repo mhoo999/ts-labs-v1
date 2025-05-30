@@ -8,3 +8,14 @@
 const isEven = (n: number) => n % 2 === 0;
 filterNumbers([1, 2, 3, 4], isEven) // [2, 4]
 */
+
+type Even = (n: number) => boolean;
+const isEven: Even = (n: number) => n % 2 === 0;
+const isOde: Even = (n: number) => n % 2 === 1;
+
+function filterNumbers(nums:number[], operation:Even): number[] {
+    return nums.filter(operation);
+}
+
+console.log(filterNumbers([1, 2, 3, 4, 5], isEven));
+console.log(filterNumbers([1, 2, 3, 4, 5], isOde));

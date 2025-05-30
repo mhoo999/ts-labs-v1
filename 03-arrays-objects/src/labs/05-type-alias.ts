@@ -7,3 +7,10 @@
  */
 
 // TODO: Lecture 타입, lectures 배열, popularLectures, titleList 완성
+
+type Lecture = {
+    title: string,
+    instructor: string,
+    studenmts: number
+}
+

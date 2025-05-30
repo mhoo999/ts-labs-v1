@@ -7,8 +7,8 @@ let b1: boolean = true;
 let u1: unknown = "뭔가";
 let a1: any = 777;
 
-// n1 = s1;
+// n1 = s1; // 불가
 // s1 = a1;
-// b1 = u1;
+// b1 = u1; // 불가
 // u1 = n1;
 // a1 = b1;

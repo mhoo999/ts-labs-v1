@@ -6,3 +6,24 @@
  */
 
 // TODO: Book 타입, books 배열, availableBooks 필터링
+
+type Book = {
+    title: string,
+    author: string,
+    publishedYear: string,
+    isVailable: boolean
+}
+
+let books: Book[] = [];
+
+books.push({
+    title: "해리포터",
+    author: "롤링",
+    publishedYear: "1991",
+    isVailable: false
+}, {
+    title: "해리포터2",
+    author: "롤링",
+    publishedYear: "1991",
+    isVailable: false
+});

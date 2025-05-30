@@ -6,3 +6,16 @@
  */
 
 // TODO: StudentScore 타입 선언, scores 배열 생성, passed 계산
+
+type score = [string, number];
+
+let scores: score[] = [
+    ["yunuser", 50],
+    ["yuuser", 60],
+    ["sora", 80]
+]
+
+console.log(scores);
+
+let passed = scores.filter((user) => user[1] >= 70);
+console.log(passed);
